@@ -1,0 +1,24 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wathh": "sass --watch ./src/sass:./src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigoandregg/interactive-rating-component-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigoandregg/interactive-rating-component-main/issues"
+  },
+  "homepage": "https://github.com/rodrigoandregg/interactive-rating-component-main#readme",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
+}

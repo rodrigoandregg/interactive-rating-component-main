@@ -1,0 +1,15 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+$font-1: "Overpass", sans-serif;
+
+// colors
+$primary: hsl(25, 97%, 53%);
+$ligth: hsl(0, 0%, 100%);
+$p-color: hsl(217, 12%, 63%);
+$btn-bg: hsl(216, 12%, 54%);
+$card-bg: hsl(213, 19%, 18%);
+$main-bg: hsl(216, 12%, 8%);
+
+// media queries
+$mobile: 375px;
+$desktop: 1440px;
