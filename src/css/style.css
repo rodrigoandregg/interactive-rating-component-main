@@ -123,7 +123,7 @@ body {
   border-radius: 4rem;
   padding: 0.8rem;
   height: 3rem;
-  width: 100%;
+  width: 3rem;
   color: hsl(217deg, 12%, 63%);
   font-size: 1rem;
   font-weight: 700;
@@ -171,6 +171,33 @@ footer {
 
 .attribution a {
   color: hsl(0deg, 0%, 100%);
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+
+[data-title]:after {
+  content: attr(data-title);
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1rem;
+  font-family: "Overpass", sans-serif;
+  position: absolute;
+  padding: 3px 20px;
+  top: -2rem;
+  left: 0%;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+  border-radius: 1rem;
+}
+
+[data-title] {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

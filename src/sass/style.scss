@@ -68,7 +68,7 @@ body {
   &__btn {
     @include btn;
     height: 3rem;
-    width: 100%;
+    width: 3rem;
     color: $p-color;
     font-size: 1rem;
     font-weight: 700;
@@ -114,4 +114,29 @@ footer {
 }
 .attribution a {
   color: $light;
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  background-color: $primary;
+  color: $light;
+  font-size: 1rem;
+  font-family: $font-1;
+  position: absolute;
+  padding: 3px 20px;
+  top: -2rem;
+  left: 0%;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+  border-radius: 1rem;
+}
+[data-title] {
+  position: relative;
 }
