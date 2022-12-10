@@ -13,7 +13,15 @@ img {
   width: 100%;
   height: 100%;
 }
+figure {
+  line-height: 0;
+}
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
 }

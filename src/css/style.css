@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+figure {
+  line-height: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+body {
+  background: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: hsl(213deg, 19%, 18%);
+  min-width: 16rem;
+  max-width: 24rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+}
+.card__picture--rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: hsla(218deg, 7%, 42%, 0.27);
+  border-radius: 4rem;
+  padding: 0.8rem;
+  align-self: start;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.card__info--thanks {
+  align-items: center;
+  text-align: center;
+}
+.card__title {
+  color: hsl(0deg, 0%, 100%);
+}
+.card__paragraph {
+  color: hsl(217deg, 12%, 63%);
+}
+.card__paragraph--thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: hsl(25deg, 97%, 53%);
+  background: hsla(218deg, 7%, 42%, 0.27);
+  padding: 0.5rem;
+  border-radius: 3rem;
+  font-weight: 700;
+  height: 100%;
+}
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  width: 100%;
+}
+.card__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: hsla(218deg, 7%, 42%, 0.27);
+  border-radius: 4rem;
+  padding: 0.8rem;
+  height: 3rem;
+  width: 100%;
+  color: hsl(217deg, 12%, 63%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.card__btn:hover {
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(25deg, 97%, 53%);
+}
+.card__btn:focus {
+  background: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: hsla(218deg, 7%, 42%, 0.27);
+  border-radius: 4rem;
+  padding: 0.8rem;
+  background: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  width: 100%;
+  padding: 1rem;
+}
+.card__cta:hover {
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(217deg, 12%, 63%);
+}
+
+.attribution a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+/*# sourceMappingURL=style.css.map */

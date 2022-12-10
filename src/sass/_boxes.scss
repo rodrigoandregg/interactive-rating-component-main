@@ -1,0 +1,15 @@
+@mixin flexBox($fd: column, $jc: center, $ai: center) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+
+  gap: 1rem;
+}
+
+@mixin btn {
+  @include flexBox;
+  background: $btn-bg;
+  border-radius: 4rem;
+  padding: 0.8rem;
+}
