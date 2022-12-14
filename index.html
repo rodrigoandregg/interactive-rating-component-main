@@ -14,33 +14,40 @@
   <!-- Rating state start -->
   <main class="card">
     <div class="card__content rating" id="rating">
-      <figure class="card__picture card__picture--rating">
-        <img class="card__img" src="./src/images/icon-star.svg" alt="">
-      </figure>
+      <img class="card__star" src="./src/images/icon-star.svg" alt="star icon" aria-hidden="true">
       <div class="card__info">
         <h1 class="card__title">How did we do?</h1>
         <p class="card__paragraph">Please let us know how we did with your support request. All feedback is
           appreciated
           to help us improve our offering!</p>
       </div>
-      <div class="card__buttons">
-        <button class="card__btn">1</button>
-        <button class="card__btn">2</button>
-        <button class="card__btn">3</button>
-        <button class="card__btn">4</button>
-        <button class="card__btn">5</button>
-      </div>
-      <button class="card__cta">Submit</button>
+      <form class="card__form">
+        <fieldset class="card__buttons">
+          <input type="radio" name="btn" id="1" class="card__input">
+          <label for="1" class="card__btn">1</label>
+          <input type="radio" name="btn" id="2" class="card__input">
+          <label for="2" class="card__btn">2</label>
+          <input type="radio" name="btn" id="3" class="card__input">
+          <label for="3" class="card__btn">3</label>
+          <input type="radio" name="btn" id="4" class="card__input">
+          <label for="4" class="card__btn">4</label>
+          <input type="radio" name="btn" id="5" class="card__input">
+          <label for="5" class="card__btn">5</label>
+        </fieldset>
+        <button class="card__cta">Submit</button>
+      </form>
     </div>
 
     <div class="card__content thanks" id="thanks">
       <figure class="card__picture card__picture--thanks">
-        <img class="card__img card__img--thanks" src="./src/images/illustration-thank-you.svg" alt="">
+        <img class="card__img card__img--thanks" src="./src/images/illustration-thank-you.svg" alt="phone illustraion"
+          aria-hidden="true">
       </figure>
       <p class="card__paragraph card__paragraph--thanks">You selected out of 5</p>
       <div class="card__info card__info--thanks">
         <h2 class="card__title card__title--thanks">Thank you!</h2>
-        <p class="card__paragraph card__paragraph">We appreciate you taking the time to give a rating. If you ever need
+        <p class="card__paragraph card__paragraph">We appreciate you taking the time to give a rating. If you ever
+          need
           more support,
           don’t hesitate to get in touch!</p>
       </div>

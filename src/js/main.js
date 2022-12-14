@@ -13,8 +13,9 @@ ratingBtn.forEach((btn) => {
   });
 });
 
-const onSubmit = () => {
+const onSubmit = (event) => {
   if (score !== undefined) {
+    event.preventDefault();
     cardContentThanks.style.display = "flex";
     cardContentRating.style.display = "none";
     thanksParagraph.textContent = `You selected ${score} out of 5`;

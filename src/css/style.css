@@ -47,7 +47,6 @@ body {
   align-items: center;
   gap: 1rem;
   background: hsl(213deg, 19%, 18%);
-  min-width: 16rem;
   max-width: 24rem;
   margin: 1rem;
   border-radius: 1rem;
@@ -62,7 +61,7 @@ body {
   padding: 2rem;
   gap: 2rem;
 }
-.card__picture--rating {
+.card__star {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,6 +71,8 @@ body {
   border-radius: 4rem;
   padding: 0.8rem;
   align-self: start;
+  width: 3rem;
+  overflow: visible;
 }
 .card__info {
   display: flex;
@@ -103,6 +104,13 @@ body {
   font-weight: 700;
   height: 100%;
 }
+.card__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 .card__buttons {
   display: flex;
   flex-direction: row;
@@ -111,6 +119,7 @@ body {
   gap: 1rem;
   padding: 0;
   width: 100%;
+  border: none;
 }
 .card__btn {
   display: flex;
@@ -126,12 +135,17 @@ body {
   color: hsl(217deg, 12%, 63%);
   font-size: 1rem;
   font-weight: 700;
+  user-select: none;
+  cursor: pointer;
 }
 .card__btn:hover {
   color: hsl(0deg, 0%, 100%);
   background: hsl(25deg, 97%, 53%);
 }
-.card__btn:focus {
+.card__input {
+  display: none;
+}
+.card__input:checked + .card__btn {
   background: hsl(217deg, 12%, 63%);
   color: hsl(0deg, 0%, 100%);
 }
@@ -149,6 +163,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
+  cursor: pointer;
   width: 100%;
   padding: 1rem;
 }
